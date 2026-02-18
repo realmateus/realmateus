@@ -814,11 +814,12 @@
       image:    "assets/projetos/Aliança/Mockups/free-flora-branding-mockup-by-mockupcloud.jpg",
       logo:     "assets/projetos/Aliança/logo.png",
       size:     "",
-      delay:    0
+      delay:    0,
+      href:     "alianca.html"
     },
     {
       name:     "Mafar & Martin",
-      category: "Casamento",
+      category: "Identidade Visual",
       image:    "assets/projetos/mafar and martin/Mockups/banner grande.jpg",
       logo:     "assets/projetos/mafar and martin/logo.png",
       size:     "large",
@@ -834,8 +835,11 @@
     card.className = `project-card${p.size ? ' ' + p.size : ''}`;
     card.style.transitionDelay = p.delay + 'ms';
 
+    const wrapOpen  = p.href ? `<a href="${p.href}" class="project-card-img-wrap" style="display:block">` : `<div class="project-card-img-wrap">`;
+    const wrapClose = p.href ? `</a>` : `</div>`;
+
     card.innerHTML = `
-      <div class="project-card-img-wrap">
+      ${wrapOpen}
         <img
           src="${p.image}"
           alt="${p.name}"
@@ -847,7 +851,7 @@
           <div class="project-cat">${p.category}</div>
           <div class="project-name">${p.name}</div>
         </div>
-      </div>
+      ${wrapClose}
       <div class="project-meta">
         <span class="project-meta-name">${p.name}</span>
         <span class="project-meta-cat">${p.category}</span>
