@@ -3,81 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KOSS — Identidade Visual · Mateus Almeida</title>
+  <title>Luca Importados — Mateus Almeida</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
   <style>
-    /* ─── FONT FACES ──────────────────────────────────────────────── */
+    /* ─── BRAND FONTS ───────────────────────────────────────────────── */
     @font-face {
-      font-family: 'Kiona';
-      src: url('assets/projetos/koss/Fontes/Kiona/Kiona-Bold.ttf') format('truetype');
-      font-weight: 700; font-style: normal;
+      font-family: 'New York';
+      src: url("assets/projetos/luca imports/New York/NewYorkMedium-Regular.ttf") format('truetype');
+      font-weight: 400; font-style: normal; font-display: swap;
     }
     @font-face {
-      font-family: 'Kiona';
-      src: url('assets/projetos/koss/Fontes/Kiona/Kiona-SemiBold.ttf') format('truetype');
-      font-weight: 600; font-style: normal;
+      font-family: 'New York';
+      src: url("assets/projetos/luca imports/New York/NewYorkMedium-RegularItalic.ttf") format('truetype');
+      font-weight: 400; font-style: italic; font-display: swap;
     }
     @font-face {
-      font-family: 'Kiona';
-      src: url('assets/projetos/koss/Fontes/Kiona/Kiona-Regular.ttf') format('truetype');
-      font-weight: 400; font-style: normal;
+      font-family: 'Aileron';
+      src: url("assets/projetos/luca imports/Aileron/Aileron-Regular.otf") format('opentype');
+      font-weight: 400; font-style: normal; font-display: swap;
     }
     @font-face {
-      font-family: 'Kiona';
-      src: url('assets/projetos/koss/Fontes/Kiona/Kiona-Light.ttf') format('truetype');
-      font-weight: 300; font-style: normal;
+      font-family: 'Aileron';
+      src: url("assets/projetos/luca imports/Aileron/Aileron-Light.otf") format('opentype');
+      font-weight: 300; font-style: normal; font-display: swap;
     }
     @font-face {
-      font-family: 'TT Commons';
-      src: url('assets/projetos/koss/Fontes/TT-Commons/TT Commons Regular.otf') format('opentype');
-      font-weight: 400; font-style: normal;
-    }
-    @font-face {
-      font-family: 'TT Commons';
-      src: url('assets/projetos/koss/Fontes/TT-Commons/TT Commons Light.otf') format('opentype');
-      font-weight: 300; font-style: normal;
-    }
-    @font-face {
-      font-family: 'TT Commons';
-      src: url('assets/projetos/koss/Fontes/TT-Commons/TT Commons Medium.otf') format('opentype');
-      font-weight: 500; font-style: normal;
-    }
-    @font-face {
-      font-family: 'TT Commons';
-      src: url('assets/projetos/koss/Fontes/TT-Commons/TT Commons Bold.otf') format('opentype');
-      font-weight: 700; font-style: normal;
-    }
-    @font-face {
-      font-family: 'TT Commons';
-      src: url('assets/projetos/koss/Fontes/TT-Commons/TT Commons ExtraBold.otf') format('opentype');
-      font-weight: 800; font-style: normal;
+      font-family: 'Laira';
+      src: url("assets/projetos/luca imports/Laira/Laira-Italic.otf") format('opentype');
+      font-weight: 400; font-style: italic; font-display: swap;
     }
 
-    /* ─── VARIABLES ──────────────────────────────────────────────── */
+    /* ─── VARIABLES ─────────────────────────────────────────────────── */
     :root {
       --bg:           #F2EDE4;
       --text:         #1A1714;
       --text-muted:   #7A7168;
-      --accent:       #C4954A;
+      --accent:       #B89A6A;
       --accent-light: #E8DDD0;
       --border:       rgba(26, 23, 20, 0.09);
       --serif:        "Instrument Serif", serif;
       --sans:         "Inter", sans-serif;
-      --kiona:        'Kiona', 'Inter', sans-serif;
-      --ttcommons:    'TT Commons', 'Inter', sans-serif;
-      /* KOSS Brand Palette */
-      --koss-negro:   #0E0D0B;
-      --koss-ouro:    #C4954A;
-      --koss-verde:   #1C3A28;
-      --koss-musgo:   #8A9B6E;
-      --koss-creme:   #F0EBE0;
+      /* Luca brand palette */
+      --luca-vinho:   #602021;
+      --luca-verm:    #9d1e23;
+      --luca-ouro:    #cca633;
+      --luca-bege:    #cdb979;
+      --luca-off:     #e8e4d6;
+      --luca-verde:   #2d5346;
     }
 
-    /* ─── RESET ──────────────────────────────────────────────────── */
+    /* ─── RESET ──────────────────────────────────────────────────────── */
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     h1, h2, h3, h4, h5, h6, blockquote { font-weight: 400; }
@@ -91,7 +70,7 @@
     img { display: block; max-width: 100%; }
     a   { color: inherit; text-decoration: none; }
 
-    /* ─── CUSTOM CURSOR ──────────────────────────────────────────── */
+    /* ─── CUSTOM CURSOR ──────────────────────────────────────────────── */
     #cur-dot {
       position: fixed; width: 7px; height: 7px;
       background: #fff; border-radius: 50%;
@@ -109,7 +88,7 @@
       mix-blend-mode: difference;
     }
 
-    /* ─── NAV ────────────────────────────────────────────────────── */
+    /* ─── NAV ────────────────────────────────────────────────────────── */
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 200;
       display: flex; align-items: center; justify-content: space-between;
@@ -130,7 +109,7 @@
     .nav-logo {
       font-family: var(--serif); font-style: italic;
       font-size: 1.05rem; letter-spacing: .02em;
-      color: rgba(240,235,224,.8);
+      color: rgba(242,237,228,.85);
       transition: color .4s;
     }
     nav.scrolled .nav-logo { color: var(--text); }
@@ -138,13 +117,11 @@
     .nav-links a {
       font-family: var(--sans); font-size: .72rem; font-weight: 400;
       letter-spacing: .1em; text-transform: uppercase;
-      color: rgba(240,235,224,.32); transition: color .3s;
+      color: var(--text-muted); transition: color .3s;
     }
-    .nav-links a:hover { color: rgba(240,235,224,.75); }
-    nav.scrolled .nav-links a { color: var(--text-muted); }
-    nav.scrolled .nav-links a:hover { color: var(--text); }
+    .nav-links a:hover { color: var(--text); }
 
-    /* ─── KEYFRAMES ──────────────────────────────────────────────── */
+    /* ─── KEYFRAMES ──────────────────────────────────────────────────── */
     @keyframes slideUp { to { transform: translateY(0); } }
     @keyframes fadeUp  { to { opacity: 1; transform: translateY(0); } }
     @keyframes scrollBeat {
@@ -152,88 +129,95 @@
       50%      { transform: scaleY(.55); opacity: 1;  }
     }
 
-    /* ─── PROJECT HERO ───────────────────────────────────────────── */
+    /* ─── PROJECT HERO ───────────────────────────────────────────────── */
     .proj-hero {
       min-height: 100vh;
-      background: var(--koss-negro);
-      color: var(--koss-creme);
+      background: var(--text);
+      color: var(--bg);
       display: flex; flex-direction: column;
       justify-content: center; align-items: center;
       text-align: center;
       padding: 12rem 4rem 9rem;
       position: relative; overflow: hidden;
     }
-    .hero-glow {
-      position: absolute; inset: 0; pointer-events: none;
-      background:
-        radial-gradient(ellipse 60% 50% at 50% 50%, rgba(28,58,40,.45) 0%, transparent 70%),
-        radial-gradient(ellipse 40% 30% at 70% 60%, rgba(196,149,74,.05) 0%, transparent 60%);
+
+    /* Subtle diagonal field lines */
+    .proj-hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background-image: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 48px,
+        rgba(204,166,51,.045) 48px,
+        rgba(204,166,51,.045) 49px
+      );
+      pointer-events: none;
     }
-    .hero-vline {
+
+    /* Decorative vertical accent lines (right side) */
+    .hero-stripes {
       position: absolute;
-      right: 8vw; top: 50%; transform: translateY(-50%);
-      width: 1px; height: 100px;
-      background: linear-gradient(to bottom, transparent, rgba(196,149,74,.4), transparent);
+      right: 5vw; top: 50%; transform: translateY(-50%);
+      display: flex; flex-direction: column; gap: 10px;
+      opacity: .14;
     }
-    .hero-vline-left {
-      position: absolute;
-      left: 8vw; top: 50%; transform: translateY(-50%);
-      width: 1px; height: 100px;
-      background: linear-gradient(to bottom, transparent, rgba(196,149,74,.2), transparent);
+    .stripe {
+      width: 2px; height: 72px;
+      background: linear-gradient(to bottom, transparent, var(--luca-ouro), transparent);
     }
 
     .proj-hero-tag {
-      font-family: var(--ttcommons); font-size: .68rem; font-weight: 400;
-      letter-spacing: .28em; text-transform: uppercase;
-      color: var(--koss-ouro); margin-bottom: 3.5rem;
+      font-family: var(--sans); font-size: .68rem;
+      letter-spacing: .22em; text-transform: uppercase;
+      color: var(--luca-ouro); margin-bottom: 3rem;
       opacity: 0;
       animation: fadeUp .8s ease .2s forwards;
+      position: relative; z-index: 1;
     }
     .proj-hero-title {
       font-family: var(--serif);
-      font-weight: 400;
-      font-size: clamp(4rem, 9vw, 11rem);
-      line-height: 1.02; letter-spacing: -.025em;
-      color: var(--koss-creme);
+      font-size: clamp(4.5rem, 9vw, 10.5rem);
+      line-height: 1.02; letter-spacing: -.03em;
+      color: var(--bg);
+      position: relative; z-index: 1;
     }
-    .proj-hero-title em {
-      font-style: italic;
-      color: var(--koss-ouro);
-    }
-    .hl { display: block; overflow: hidden; padding-bottom: .18em; margin-bottom: -.18em; }
+    .proj-hero-title em { font-style: italic; color: var(--luca-ouro); }
+    .hl { display: block; overflow: hidden; }
     .hl-inner {
       display: block;
       transform: translateY(105%);
       animation: slideUp 1s cubic-bezier(.22,1,.36,1) forwards;
     }
     .hl:nth-child(1) .hl-inner { animation-delay: .32s; }
-    .hl:nth-child(2) .hl-inner { animation-delay: .52s; }
+    .hl:nth-child(2) .hl-inner { animation-delay: .48s; }
 
     .proj-hero-sub {
-      font-family: var(--ttcommons); font-size: clamp(.82rem, 1.1vw, .95rem);
-      font-weight: 300; color: rgba(240,235,224,.32);
-      margin-top: 3.5rem; max-width: 40ch; line-height: 1.95;
+      font-family: var(--sans); font-size: clamp(.85rem, 1.2vw, 1rem);
+      font-weight: 300; color: rgba(242,237,228,.42);
+      margin-top: 2.8rem; max-width: 44ch; line-height: 1.75;
       opacity: 0; transform: translateY(18px);
-      animation: fadeUp .9s ease 1.05s forwards;
-      letter-spacing: .04em;
+      animation: fadeUp .9s ease .9s forwards;
+      position: relative; z-index: 1;
     }
     .proj-hero-scroll {
       position: absolute; bottom: 3rem; left: 0; right: 0;
       display: flex; flex-direction: column; align-items: center; gap: .7rem;
-      opacity: 0; animation: fadeUp .8s ease 1.5s forwards;
+      opacity: 0; animation: fadeUp .8s ease 1.4s forwards;
+      z-index: 1;
     }
     .proj-hero-scroll span {
-      font-family: var(--ttcommons); font-size: .6rem;
-      letter-spacing: .22em; text-transform: uppercase;
-      color: rgba(240,235,224,.22);
+      font-family: var(--sans); font-size: .62rem;
+      letter-spacing: .18em; text-transform: uppercase;
+      color: rgba(242,237,228,.3);
     }
     .proj-hero-scroll-line {
       width: 1px; height: 3rem;
-      background: linear-gradient(to bottom, transparent, var(--koss-ouro));
+      background: linear-gradient(to bottom, transparent, var(--luca-ouro));
       animation: scrollBeat 2s ease-in-out infinite;
     }
 
-    /* ─── INFO STRIP ──────────────────────────────────────────────── */
+    /* ─── INFO STRIP ──────────────────────────────────────────────────── */
     .proj-info-strip {
       display: grid; grid-template-columns: repeat(4, 1fr);
       border-bottom: 1px solid var(--border);
@@ -244,23 +228,23 @@
     }
     .proj-info-item:last-child { border-right: none; }
     .proj-info-label {
-      font-family: var(--ttcommons); font-size: .63rem; font-weight: 500;
-      letter-spacing: .18em; text-transform: uppercase;
+      font-family: var(--sans); font-size: .63rem;
+      letter-spacing: .16em; text-transform: uppercase;
       color: var(--accent); display: block; margin-bottom: .75rem;
     }
     .proj-info-value {
       font-family: var(--serif); font-size: 1.1rem; line-height: 1.45;
     }
 
-    /* ─── OPENING STATEMENT ──────────────────────────────────────── */
+    /* ─── OPENING STATEMENT ──────────────────────────────────────────── */
     .proj-statement {
       padding: 9rem 4rem;
       border-bottom: 1px solid var(--border);
     }
     .proj-statement-inner { max-width: 900px; margin: 0 auto; }
     .sec-label {
-      font-family: var(--ttcommons); font-size: .66rem; font-weight: 500;
-      letter-spacing: .2em; text-transform: uppercase;
+      font-family: var(--sans); font-size: .66rem;
+      letter-spacing: .16em; text-transform: uppercase;
       color: var(--accent); margin-bottom: 2rem;
       display: block;
     }
@@ -270,38 +254,35 @@
       line-height: 1.5;
     }
 
-    /* ─── FULL-BLEED IMAGE ────────────────────────────────────────── */
+    /* ─── FULL-BLEED IMAGE ────────────────────────────────────────────── */
     .proj-img-full {
       position: relative; overflow: hidden;
       height: 78vh;
+      background: var(--text);
     }
     .proj-img-full img {
-      width: 100%; height: 115%; object-fit: cover;
+      position: absolute; top: 50%; left: 0;
+      width: 100%; height: 160%; object-fit: cover;
       will-change: transform;
+      transform: translateY(-50%);
     }
 
-    /* ─── LOGO REVEAL ─────────────────────────────────────────────── */
+    /* ─── LOGO REVEAL ─────────────────────────────────────────────────── */
     .proj-logo-section {
-      background: var(--koss-verde);
+      background: var(--luca-vinho);
       display: flex; align-items: center; justify-content: center;
       padding: 8rem 4rem;
-      position: relative; overflow: hidden;
-    }
-    .proj-logo-section::before {
-      content: '';
-      position: absolute; inset: 0;
-      background: radial-gradient(ellipse at center, rgba(196,149,74,.06) 0%, transparent 65%);
     }
     .proj-logo-reveal {
-      max-width: 260px; width: 40%;
+      max-width: 480px; width: 62%;
+      display: block; margin: 0 auto;
       filter: brightness(0) invert(1);
-      opacity: 0; transform: scale(.88);
-      transition: opacity 1.3s cubic-bezier(.22,1,.36,1),
-                  transform 1.5s cubic-bezier(.34,1.56,.64,1);
+      opacity: 0;
+      transition: opacity 1.3s cubic-bezier(.22,1,.36,1);
     }
-    .proj-logo-reveal.visible { opacity: 1; transform: scale(1); }
+    .proj-logo-reveal.visible { opacity: 1; }
 
-    /* ─── CONCEPT SECTION ─────────────────────────────────────────── */
+    /* ─── CONCEPT SECTION ─────────────────────────────────────────────── */
     .proj-concept {
       display: grid; grid-template-columns: 5fr 7fr;
       gap: 6rem; align-items: center;
@@ -320,12 +301,20 @@
       font-size: clamp(1.05rem, 1.5vw, 1.22rem);
       line-height: 1.82;
     }
-
-    .proj-grid-img {
+    .proj-grid-wrap {
+      overflow: hidden; border-radius: 3px;
       width: 100%;
+      background: var(--accent-light);
+      display: flex; align-items: center; justify-content: center;
+      padding: 3rem;
+    }
+    .proj-grid-img {
+      width: 100%; display: block;
+      will-change: transform;
+      transition: transform .06s linear;
     }
 
-    /* ─── IMAGE PAIR ──────────────────────────────────────────────── */
+    /* ─── IMAGE PAIR ──────────────────────────────────────────────────── */
     .proj-img-pair {
       display: grid; grid-template-columns: 1fr 1fr;
       gap: 1rem;
@@ -337,7 +326,7 @@
     }
     .proj-img-pair-item:hover img { transform: scale(1.05); }
 
-    /* ─── GENERIC SECTION WRAPPER ─────────────────────────────────── */
+    /* ─── GENERIC SECTION ─────────────────────────────────────────────── */
     .proj-section {
       padding: 9rem 4rem;
       border-bottom: 1px solid var(--border);
@@ -350,7 +339,7 @@
     }
     .sec-title em { font-style: italic; color: var(--accent); }
 
-    /* ─── COLOR PALETTE ───────────────────────────────────────────── */
+    /* ─── COLOR PALETTE ───────────────────────────────────────────────── */
     .palette-grid {
       display: grid; grid-template-columns: repeat(5, 1fr);
       gap: 1.5rem; margin-top: 4rem;
@@ -362,104 +351,37 @@
     }
     .palette-swatch:hover { transform: translateY(-6px); }
     .palette-name {
-      font-family: var(--ttcommons); font-size: .72rem;
+      font-family: var(--sans); font-size: .72rem;
       font-weight: 500; letter-spacing: .03em; line-height: 1.3;
     }
     .palette-hex {
-      font-family: var(--ttcommons); font-size: .63rem;
+      font-family: var(--sans); font-size: .63rem;
       color: var(--text-muted); letter-spacing: .07em;
     }
 
-    /* ─── TYPOGRAPHY — DARK SECTION ──────────────────────────────── */
-    .proj-dark-section {
-      background: var(--koss-negro);
-      padding: 9rem 4rem;
-      position: relative; overflow: hidden;
-    }
-    .proj-dark-section::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 4rem; right: 4rem;
-      height: 1px;
-      background: linear-gradient(to right, transparent, rgba(196,149,74,.25), transparent);
-    }
-    .proj-dark-section::after {
-      content: '';
-      position: absolute;
-      bottom: 0; left: 4rem; right: 4rem;
-      height: 1px;
-      background: linear-gradient(to right, transparent, rgba(196,149,74,.25), transparent);
-    }
-    .proj-dark-section .proj-section-inner { max-width: 1000px; margin: 0 auto; }
-    .proj-dark-section .sec-label { color: var(--koss-ouro); }
-    .proj-dark-section .sec-title { color: var(--koss-creme); }
-    .proj-dark-section .sec-title em { color: var(--koss-ouro); }
-    .proj-dark-section .proj-body-text { color: rgba(240,235,224,.42); }
-
+    /* ─── TYPOGRAPHY ──────────────────────────────────────────────────── */
     .type-grid {
-      display: grid; grid-template-columns: 1fr 1fr;
-      gap: 3rem; margin-top: 5rem;
+      display: grid; grid-template-columns: 1fr 1fr 1fr;
+      gap: 2.5rem; margin-top: 4rem;
     }
     .type-sample {
-      margin-bottom: 1.2rem;
-      padding-bottom: 1.2rem;
-      border-bottom: 1px solid rgba(240,235,224,.08);
-    }
-    .type-sample-text {
-      font-size: clamp(2.4rem, 4vw, 4.5rem);
-      letter-spacing: .04em; line-height: 1.05;
+      font-size: clamp(1.9rem, 3.2vw, 3.4rem);
+      letter-spacing: -.02em; line-height: 1.1;
+      margin-bottom: 1.1rem;
+      padding-bottom: 1.1rem;
+      border-bottom: 1px solid var(--border);
     }
     .type-name {
-      font-family: var(--ttcommons); font-size: .68rem;
-      text-transform: uppercase; letter-spacing: .16em;
-      color: rgba(240,235,224,.35);
+      font-family: var(--sans); font-size: .68rem;
+      text-transform: uppercase; letter-spacing: .14em;
+      color: var(--text-muted);
     }
-    .type-role {
-      font-family: var(--ttcommons); font-size: .63rem;
-      color: var(--koss-ouro); margin-top: .4rem; letter-spacing: .06em;
-    }
-    .type-weights-row {
-      display: flex; gap: 1.5rem; margin-top: 1.8rem; flex-wrap: wrap;
-    }
-    .type-weight-chip {
-      font-family: var(--ttcommons); font-size: .62rem;
-      letter-spacing: .12em; text-transform: uppercase;
-      color: rgba(240,235,224,.25);
-      padding: .35rem .8rem;
-      border: 1px solid rgba(240,235,224,.08);
-      border-radius: 1px;
+    .type-weights {
+      font-family: var(--sans); font-size: .65rem;
+      color: var(--accent); margin-top: .35rem; letter-spacing: .06em;
     }
 
-    /* ─── MOSAIC — 3 IMAGES ───────────────────────────────────────── */
-    .proj-mosaic-wrap {
-      padding: 1.5rem;
-      background: var(--bg);
-    }
-    .proj-mosaic {
-      display: grid;
-      grid-template-columns: 3fr 2fr;
-      grid-template-rows: 1fr 1fr;
-      gap: 1.5rem;
-      height: 86vh;
-    }
-    .proj-mosaic-main {
-      grid-row: 1 / 3;
-      overflow: hidden;
-      border-radius: 3px;
-    }
-    .proj-mosaic-side {
-      overflow: hidden;
-      border-radius: 3px;
-    }
-    .proj-mosaic-main img,
-    .proj-mosaic-side img {
-      width: 100%; height: 100%; object-fit: cover;
-      transition: transform 1.1s cubic-bezier(.25,.46,.45,.94);
-    }
-    .proj-mosaic-main:hover img,
-    .proj-mosaic-side:hover img { transform: scale(1.05); }
-
-    /* ─── BACK CTA ────────────────────────────────────────────────── */
+    /* ─── BACK CTA ────────────────────────────────────────────────────── */
     .proj-back-cta {
       padding: 10rem 4rem;
       background: var(--text);
@@ -467,8 +389,8 @@
       text-align: center;
     }
     .proj-back-label {
-      font-family: var(--ttcommons); font-size: .68rem; font-weight: 500;
-      letter-spacing: .25em; text-transform: uppercase;
+      font-family: var(--sans); font-size: .68rem;
+      letter-spacing: .22em; text-transform: uppercase;
       color: var(--accent); margin-bottom: 2.2rem;
     }
     .proj-back-title {
@@ -481,19 +403,19 @@
     .proj-back-btn {
       display: inline-flex; align-items: center; gap: .9rem;
       padding: 1.1rem 3.2rem;
-      border: 1px solid rgba(242,237,228,.18);
-      font-family: var(--ttcommons); font-size: .72rem; font-weight: 400;
-      letter-spacing: .18em; text-transform: uppercase;
-      color: rgba(242,237,228,.45);
+      border: 1px solid rgba(242,237,228,.2);
+      font-family: var(--sans); font-size: .72rem;
+      letter-spacing: .15em; text-transform: uppercase;
+      color: rgba(242,237,228,.55);
       border-radius: 1px;
       transition: border-color .3s, color .3s;
     }
     .proj-back-btn:hover {
-      border-color: rgba(196,149,74,.5);
+      border-color: rgba(184,154,106,.5);
       color: var(--accent);
     }
 
-    /* ─── FOOTER ──────────────────────────────────────────────────── */
+    /* ─── FOOTER ──────────────────────────────────────────────────────── */
     footer {
       padding: 7rem 4rem 4rem;
       background: var(--bg);
@@ -521,13 +443,13 @@
       letter-spacing: .04em; margin-bottom: .35rem;
     }
     .footer-role {
-      font-family: var(--ttcommons); font-size: .72rem; font-weight: 400;
+      font-family: var(--sans); font-size: .72rem;
       letter-spacing: .14em; text-transform: uppercase;
       color: var(--text-muted); margin-bottom: 1.75rem;
     }
     .footer-coords {
       display: inline-flex; align-items: center; gap: .5rem;
-      font-family: var(--ttcommons); font-size: .78rem;
+      font-family: var(--sans); font-size: .78rem;
       color: var(--text-muted); letter-spacing: .04em;
       cursor: default;
     }
@@ -544,28 +466,28 @@
       display: flex; justify-content: center; gap: 3rem;
     }
     .footer-bottom a {
-      font-family: var(--ttcommons); font-size: .68rem;
+      font-family: var(--sans); font-size: .68rem;
       letter-spacing: .12em; text-transform: uppercase;
       color: var(--text-muted); transition: color .3s;
     }
     .footer-bottom a:hover { color: var(--text); }
 
-    /* ─── REVEAL ──────────────────────────────────────────────────── */
+    /* ─── REVEAL ──────────────────────────────────────────────────────── */
     .reveal {
       opacity: 0; transform: translateY(32px);
       transition: opacity .95s ease, transform .95s ease;
     }
     .reveal.visible { opacity: 1; transform: translateY(0); }
 
-    /* ─── WORD DARKENING ──────────────────────────────────────────── */
+    /* ─── WORD DARKENING ──────────────────────────────────────────────── */
     .aword {
-      color: rgba(26,23,20,.08);
+      color: rgba(26,23,20,.09);
       transition: color .45s ease;
       display: inline;
     }
     .aword.lit { color: var(--text); }
 
-    /* ─── RESPONSIVE ──────────────────────────────────────────────── */
+    /* ─── RESPONSIVE ──────────────────────────────────────────────────── */
     @media (max-width: 900px) {
       nav { padding: 1.2rem 1.8rem; }
       .proj-hero { padding: 10rem 2rem 7rem; }
@@ -573,9 +495,7 @@
       .proj-info-item:nth-child(even) { border-right: none; }
       .proj-info-item:nth-child(1),
       .proj-info-item:nth-child(2) { border-bottom: 1px solid var(--border); }
-      .proj-statement { padding: 6rem 2rem; }
-      .proj-section  { padding: 6rem 2rem; }
-      .proj-dark-section { padding: 6rem 2rem; }
+      .proj-statement, .proj-section { padding: 6rem 2rem; }
       .proj-concept { grid-template-columns: 1fr; gap: 3rem; padding: 6rem 2rem; }
       .proj-img-pair { grid-template-columns: 1fr; }
       .proj-img-full { height: 55vw; }
@@ -583,17 +503,12 @@
       .type-grid { grid-template-columns: 1fr; }
       .proj-back-cta { padding: 7rem 2rem; }
       footer { padding: 5rem 2rem 3rem; }
-      .proj-mosaic-wrap { padding: .75rem; }
-      .proj-mosaic { grid-template-columns: 1fr; grid-template-rows: auto; height: auto; gap: .75rem; }
-      .proj-mosaic-main { grid-row: auto; aspect-ratio: 4/3; }
-      .proj-mosaic-side { aspect-ratio: 4/3; }
     }
     @media (max-width: 600px) {
       .proj-info-strip { grid-template-columns: 1fr; }
       .proj-info-item { border-right: none !important; border-bottom: 1px solid var(--border); }
       .palette-grid { grid-template-columns: repeat(2, 1fr); }
-      .hero-vline, .hero-vline-left { display: none; }
-      .proj-hero-title { font-size: clamp(3.5rem, 15vw, 6rem); }
+      .hero-stripes { display: none; }
     }
   </style>
 </head>
@@ -614,21 +529,23 @@
 
   <!-- ─── HERO ─────────────────────────────────────────────────────── -->
   <section class="proj-hero">
-    <div class="hero-glow" aria-hidden="true"></div>
-    <div class="hero-vline" aria-hidden="true"></div>
-    <div class="hero-vline-left" aria-hidden="true"></div>
+    <div class="hero-stripes" aria-hidden="true">
+      <div class="stripe"></div>
+      <div class="stripe"></div>
+      <div class="stripe"></div>
+    </div>
 
-    <p class="proj-hero-tag">Identidade Visual &middot; Moda Premium &middot; 2024</p>
+    <p class="proj-hero-tag">Identidade de Marca · Belo Horizonte · 2024</p>
 
     <h1 class="proj-hero-title">
-      <span class="hl"><span class="hl-inner">A grife</span></span>
-      <span class="hl"><span class="hl-inner">que <em>acolhe.</em></span></span>
+      <span class="hl"><span class="hl-inner">Importado.</span></span>
+      <span class="hl"><span class="hl-inner"><em>Autêntico.</em></span></span>
     </h1>
 
     <p class="proj-hero-sub">
-      Uma grife construída sobre uma palavra norueguesa
-      sem tradução perfeita: bem-estar, conforto,
-      alegria silenciosa. Exclusividade que ainda sabe acolher.
+      Identidade visual para uma loja especializada em camisetas
+      de futebol importadas — onde paixão, exclusividade e
+      prestígio se encontram.
     </p>
 
     <div class="proj-hero-scroll">
@@ -641,11 +558,11 @@
   <div class="proj-info-strip">
     <div class="proj-info-item reveal">
       <span class="proj-info-label">Cliente</span>
-      <span class="proj-info-value">KOSS</span>
+      <span class="proj-info-value">Luca Importados</span>
     </div>
     <div class="proj-info-item reveal" style="transition-delay:.08s">
       <span class="proj-info-label">Segmento</span>
-      <span class="proj-info-value">Moda Premium<br>Alto Padrão</span>
+      <span class="proj-info-value">Camisetas Importadas<br>Futebol</span>
     </div>
     <div class="proj-info-item reveal" style="transition-delay:.16s">
       <span class="proj-info-label">Serviço</span>
@@ -662,7 +579,7 @@
     <div class="proj-statement-inner">
       <span class="sec-label reveal">O Projeto</span>
       <p class="proj-statement-body" id="projStatement">
-        KOSS vem de kos — palavra norueguesa que não tem tradução exata. Algo entre conforto, alegria e bem-estar. A identidade nasce daí: do luxo que não intimida, da exclusividade que ainda sabe acolher.
+        Luca Importados não vende camisetas. Vende pertencimento. Uma identidade construída para transformar paixão em presença — e fazer cada cliente sentir que carrega algo especial.
       </p>
     </div>
   </section>
@@ -670,19 +587,21 @@
   <!-- ─── FULL BLEED 1 ─────────────────────────────────────────────── -->
   <div class="proj-img-full">
     <img
-      src="assets/projetos/koss/Mockups/01.jpg"
-      alt="KOSS — Identidade Visual"
+      src="assets/projetos/luca imports/Mockups/Free_Shopping_Bag_Mockup_1.jpg"
+      alt="Luca Importados — Sacola"
       id="imgP1"
     >
   </div>
 
   <!-- ─── LOGO REVEAL ───────────────────────────────────────────────── -->
   <div class="proj-logo-section">
-    <img
-      src="assets/projetos/koss/logo.png"
-      alt="Logotipo KOSS"
-      class="proj-logo-reveal reveal"
-    >
+    <div id="logoParallax">
+      <img
+        src="assets/projetos/luca imports/logo.png"
+        alt="Logotipo Luca Importados"
+        class="proj-logo-reveal"
+      >
+    </div>
   </div>
 
   <!-- ─── CONCEPT ───────────────────────────────────────────────────── -->
@@ -690,30 +609,39 @@
     <div class="proj-concept-text">
       <span class="sec-label reveal">Conceito</span>
       <h2 class="proj-big-title reveal" style="transition-delay:.1s">
-        Um K,<br>
-        <em>um frame.</em>
+        Um L.<br>
+        Um emblema.<br>
+        <em>Uma marca.</em>
       </h2>
       <p class="proj-body-text" id="conceptBody">
-        O símbolo é a letra K construída com linhas que se entrelaçam como fios de tecido — evocando tecelagem, conexão e sofisticação orgânica. O quadrado que a enquadra não limita: define. Autoridade que carrega movimento. Estrutura que sabe ser fluida.
+        O símbolo nasce da letra L de Luca. Linhas curvas que remetem ao movimento, à dinâmica do jogo, à solidez de um escudo. Compacto o suficiente para ser um selo. Forte o suficiente para ser um emblema. Construído para habitar camisetas, embalagens e redes sociais com a mesma autoridade.
       </p>
     </div>
-    <div>
+    <div class="proj-grid-wrap reveal" style="transition-delay:.2s">
       <img
-        src="assets/projetos/koss/grid.png"
-        alt="Grid construtivo da marca KOSS"
-        class="proj-grid-img reveal"
-        style="transition-delay:.2s"
+        src="assets/projetos/luca imports/grid.png"
+        alt="Grid construtivo — Luca Importados"
+        class="proj-grid-img"
+        id="imgGrid"
       >
     </div>
   </section>
 
-  <!-- ─── IMAGE PAIR 1 ─────────────────────────────────────────────── -->
+  <!-- ─── IMAGE PAIR: CITYLIGHTS ───────────────────────────────────── -->
   <div class="proj-img-pair">
     <div class="proj-img-pair-item">
-      <img src="assets/projetos/koss/Mockups/02.jpg" alt="KOSS — Aplicação" loading="lazy">
+      <img
+        src="assets/projetos/luca imports/Mockups/Free_Citylight_Poster_Mockup_1.jpg"
+        alt="Painel urbano — Luca Importados"
+        loading="lazy"
+      >
     </div>
     <div class="proj-img-pair-item">
-      <img src="assets/projetos/koss/Mockups/03.jpg" alt="KOSS — Aplicação" loading="lazy">
+      <img
+        src="assets/projetos/luca imports/Mockups/Black_Frame_Citylight_Mockup.jpg"
+        alt="Citylight — Luca Importados"
+        loading="lazy"
+      >
     </div>
   </div>
 
@@ -722,38 +650,39 @@
     <div class="proj-section-inner">
       <span class="sec-label reveal">Paleta Cromática</span>
       <h2 class="sec-title reveal" style="transition-delay:.08s">
-        Cinco cores.<br><em>Uma atmosfera.</em>
+        A paixão<br><em>em cores.</em>
       </h2>
-      <p class="proj-body-text reveal" style="transition-delay:.16s; max-width:52ch; margin-top:1.8rem">
-        Extraídas de paisagens do norte e da terra úmida.
-        Cada nome carrega intenção. Cada tom, uma camada de significado.
-        Nenhuma cor por acidente.
+      <p class="proj-body-text reveal" style="transition-delay:.16s; max-width:54ch; margin-top:1.8rem">
+        Vinho e vermelho para a intensidade do esporte.
+        Dourado para o prestígio do importado.
+        Verde para o campo onde tudo começa.
+        Cada cor com um papel. Nenhuma por acidente.
       </p>
       <div class="palette-grid">
         <div class="palette-item reveal" style="transition-delay:.05s">
-          <div class="palette-swatch" style="background:#1C3A28"></div>
-          <span class="palette-name">Verde Floresta</span>
-          <span class="palette-hex">#1C3A28</span>
+          <div class="palette-swatch" style="background:var(--luca-vinho)"></div>
+          <span class="palette-name">Vinho Escuro</span>
+          <span class="palette-hex">#602021</span>
         </div>
         <div class="palette-item reveal" style="transition-delay:.12s">
-          <div class="palette-swatch" style="background:#8A9B6E"></div>
-          <span class="palette-name">Musgo Serrano</span>
-          <span class="palette-hex">#8A9B6E</span>
+          <div class="palette-swatch" style="background:var(--luca-verm)"></div>
+          <span class="palette-name">Vermelho Paixão</span>
+          <span class="palette-hex">#9d1e23</span>
         </div>
         <div class="palette-item reveal" style="transition-delay:.19s">
-          <div class="palette-swatch" style="background:#0E0D0B"></div>
-          <span class="palette-name">Negro Lapso</span>
-          <span class="palette-hex">#0E0D0B</span>
+          <div class="palette-swatch" style="background:var(--luca-ouro)"></div>
+          <span class="palette-name">Dourado Prestígio</span>
+          <span class="palette-hex">#cca633</span>
         </div>
         <div class="palette-item reveal" style="transition-delay:.26s">
-          <div class="palette-swatch" style="background:#C4954A"></div>
-          <span class="palette-name">Ouro Discreto</span>
-          <span class="palette-hex">#C4954A</span>
+          <div class="palette-swatch" style="background:var(--luca-bege)"></div>
+          <span class="palette-name">Bege Dourado</span>
+          <span class="palette-hex">#cdb979</span>
         </div>
         <div class="palette-item reveal" style="transition-delay:.33s">
-          <div class="palette-swatch" style="background:#F0EBE0; border:1px solid rgba(26,23,20,.09)"></div>
-          <span class="palette-name">Linho Natural</span>
-          <span class="palette-hex">#F0EBE0</span>
+          <div class="palette-swatch" style="background:var(--luca-verde); border: 1px solid var(--border)"></div>
+          <span class="palette-name">Verde Campo</span>
+          <span class="palette-hex">#2d5346</span>
         </div>
       </div>
     </div>
@@ -762,90 +691,65 @@
   <!-- ─── FULL BLEED 2 ─────────────────────────────────────────────── -->
   <div class="proj-img-full" style="height:66vh">
     <img
-      src="assets/projetos/koss/Mockups/04.jpg"
-      alt="KOSS — Manual de Marca"
+      src="assets/projetos/luca imports/Mockups/Mailer_Box_Mockup_4.jpg"
+      alt="Caixa de Envio — Luca Importados"
       id="imgP2"
       loading="lazy"
     >
   </div>
 
-  <!-- ─── TYPOGRAPHY — dark section ───────────────────────────────── -->
-  <section class="proj-dark-section">
+  <!-- ─── TYPOGRAPHY ────────────────────────────────────────────────── -->
+  <section class="proj-section">
     <div class="proj-section-inner">
       <span class="sec-label reveal">Tipografia</span>
       <h2 class="sec-title reveal" style="transition-delay:.08s">
-        Palavras<br><em>que vestem bem.</em>
+        Clássica.<br>
+        <em>Moderna. Em movimento.</em>
       </h2>
       <p class="proj-body-text reveal" style="transition-delay:.16s; max-width:52ch; margin-top:1.8rem; margin-bottom:0">
-        Kiona e TT Commons sustentam a identidade com presença e precisão — famílias geométricas que carregam autoridade sem abrir mão de contemporaneidade.
+        New York traz elegância clássica nos títulos. Aileron estrutura o texto com leveza e clareza. Laira Itálico adiciona o toque emocional — o movimento, o jogo, a paixão.
       </p>
       <div class="type-grid reveal" style="transition-delay:.28s">
         <div>
-          <div class="type-sample">
-            <div class="type-sample-text" style="font-family:var(--kiona); font-weight:700; color:var(--koss-creme); letter-spacing:.1em; text-transform:uppercase">
-              KIONA
-            </div>
+          <div class="type-sample" style="font-family:'New York', serif;">
+            New<br>York
           </div>
           <div class="type-name">Família Primária</div>
-          <div class="type-role">Display · Títulos · Assinatura</div>
-          <div class="type-weights-row">
-            <span class="type-weight-chip">Light</span>
-            <span class="type-weight-chip">Regular</span>
-            <span class="type-weight-chip">SemiBold</span>
-            <span class="type-weight-chip" style="border-color:rgba(196,149,74,.3); color:var(--koss-ouro)">Bold</span>
-          </div>
+          <div class="type-weights">Regular · Itálico</div>
         </div>
         <div>
-          <div class="type-sample">
-            <div class="type-sample-text" style="font-family:var(--ttcommons); font-weight:300; color:var(--koss-creme)">
-              TT Commons
-            </div>
+          <div class="type-sample" style="font-family:'Aileron', sans-serif; font-weight:300;">
+            Aileron<br>Light
           </div>
           <div class="type-name">Família Secundária</div>
-          <div class="type-role">Corpo · Interface · Suporte</div>
-          <div class="type-weights-row">
-            <span class="type-weight-chip">Light</span>
-            <span class="type-weight-chip">Regular</span>
-            <span class="type-weight-chip">Medium</span>
-            <span class="type-weight-chip">Bold</span>
+          <div class="type-weights">Light · Regular</div>
+        </div>
+        <div>
+          <div class="type-sample" style="font-family:'Laira', serif; font-style:italic;">
+            Laira<br>Itálico
           </div>
+          <div class="type-name">Apoio Estilístico</div>
+          <div class="type-weights">Itálico</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ─── IMAGE PAIR 2 ─────────────────────────────────────────────── -->
+  <!-- ─── IMAGE PAIR: TAG + IPHONE ─────────────────────────────────── -->
   <div class="proj-img-pair">
     <div class="proj-img-pair-item">
-      <img src="assets/projetos/koss/Mockups/06.jpg" alt="KOSS — Aplicação" loading="lazy">
+      <img
+        src="assets/projetos/luca imports/Mockups/Label_Tag_on_Linen_Material.jpg"
+        alt="Etiqueta de Produto — Luca Importados"
+        loading="lazy"
+      >
     </div>
     <div class="proj-img-pair-item">
-      <img src="assets/projetos/koss/Mockups/07.jpg" alt="KOSS — Aplicação" loading="lazy">
-    </div>
-  </div>
-
-  <!-- ─── FULL BLEED 3 ─────────────────────────────────────────────── -->
-  <div class="proj-img-full" style="height:70vh">
-    <img
-      src="assets/projetos/koss/Mockups/05.jpg"
-      alt="KOSS — Aplicação"
-      id="imgP3"
-      loading="lazy"
-    >
-  </div>
-
-  <!-- ─── MOSAIC — 3 IMAGES ─────────────────────────────────────────── -->
-  <div class="proj-mosaic-wrap">
-    <div class="proj-mosaic">
-      <div class="proj-mosaic-main">
-        <img src="assets/projetos/koss/Mockups/08.jpg" alt="KOSS — Aplicação" loading="lazy">
-      </div>
-      <div class="proj-mosaic-side">
-        <img src="assets/projetos/koss/Mockups/09.jpg" alt="KOSS — Aplicação" loading="lazy">
-      </div>
-      <div class="proj-mosaic-side">
-        <img src="assets/projetos/koss/Mockups/10.jpg" alt="KOSS — Aplicação" loading="lazy">
-      </div>
+      <img
+        src="assets/projetos/luca imports/Mockups/Free_iPhone_Mockup_3.jpg"
+        alt="Presença Digital — Luca Importados"
+        loading="lazy"
+      >
     </div>
   </div>
 
@@ -854,10 +758,20 @@
     <div class="proj-statement-inner">
       <span class="sec-label reveal">Aplicações</span>
       <p class="proj-statement-body" id="applicationsText">
-        Do cartão ao outdoor. Da tag à tela do celular. A marca KOSS não diminui em nenhuma escala — porque uma grife premium precisa habitar cada superfície com a mesma elegância silenciosa.
+        Da sacola ao outdoor. Da etiqueta ao celular. A identidade da Luca Importados se mantém consistente em cada ponto de contato — porque uma marca que vende autenticidade precisa ser autêntica em tudo.
       </p>
     </div>
   </section>
+
+  <!-- ─── FULL BLEED 3 ─────────────────────────────────────────────── -->
+  <div class="proj-img-full" style="height:58vh">
+    <img
+      src="assets/projetos/luca imports/Mockups/Mailer_Box_Mockup_5.jpg"
+      alt="Embalagem — Luca Importados"
+      id="imgP3"
+      loading="lazy"
+    >
+  </div>
 
   <!-- ─── BACK CTA ──────────────────────────────────────────────────── -->
   <section class="proj-back-cta">
@@ -947,14 +861,30 @@
     [
       { id: 'imgP1', factor: 0.22 },
       { id: 'imgP2', factor: 0.18 },
-      { id: 'imgP3', factor: 0.20 },
+      { id: 'imgP3', factor: 0.18 },
     ].forEach(({ id, factor }) => {
       const img = document.getElementById(id);
       if (!img) return;
       const rect   = img.parentElement.getBoundingClientRect();
       const offset = (rect.top + rect.height / 2 - vh / 2) * factor;
-      img.style.transform = `translateY(${offset}px)`;
+      img.style.transform = `translateY(calc(-50% + ${offset}px))`;
     });
+
+    /* Logo parallax */
+    const logoWrap = document.getElementById('logoParallax');
+    if (logoWrap) {
+      const rect   = logoWrap.getBoundingClientRect();
+      const offset = (rect.top + rect.height / 2 - vh / 2) * 0.12;
+      logoWrap.style.transform = `translateY(${offset}px)`;
+    }
+
+    /* Grid image subtle parallax */
+    const gridImg = document.getElementById('imgGrid');
+    if (gridImg) {
+      const rect   = gridImg.parentElement.getBoundingClientRect();
+      const offset = (rect.top + rect.height / 2 - vh / 2) * 0.08;
+      gridImg.style.transform = `translateY(${offset}px)`;
+    }
   }
 
   /* ── INTERSECTION OBSERVERS ─────────────────────────────────────── */
@@ -968,6 +898,10 @@
   }, { threshold: 0.10, rootMargin: '0px 0px -60px 0px' });
 
   document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+  /* Logo image (no .reveal — parallax wrapper handles movement) */
+  const logoImg = document.querySelector('.proj-logo-reveal');
+  if (logoImg) revealObs.observe(logoImg);
 
   /* Footer logo */
   const footerObs = new IntersectionObserver(entries => {
@@ -1005,7 +939,7 @@
     requestAnimationFrame(animRing);
   })();
 
-  document.querySelectorAll('a, button, .proj-img-pair-item, .proj-mosaic-main, .proj-mosaic-side, .footer-coords, .palette-swatch')
+  document.querySelectorAll('a, button, .proj-img-pair-item, .footer-coords, .palette-swatch')
     .forEach(el => {
       el.addEventListener('mouseenter', () => {
         ring.style.width  = '60px';
