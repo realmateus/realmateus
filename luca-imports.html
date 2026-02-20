@@ -510,6 +510,14 @@
       .palette-grid { grid-template-columns: repeat(2, 1fr); }
       .hero-stripes { display: none; }
     }
+
+    /* ─── TOUCH / MOBILE ─────────────────────────────────────────────── */
+    @media (hover: none) and (pointer: coarse) {
+      body { cursor: auto; }
+      #cur-dot, #cur-ring { display: none !important; }
+      .footer-coords:hover .footer-city { opacity: 0; transform: translateX(-6px); }
+      .footer-coords.active .footer-city { opacity: 1; transform: translateX(0); }
+    }
   </style>
 </head>
 <body>
@@ -921,37 +929,46 @@
   window.addEventListener('load', () => { updateWords(); onScroll(); });
 
   /* ── CUSTOM CURSOR ──────────────────────────────────────────────── */
-  const dot  = document.getElementById('cur-dot');
-  const ring = document.getElementById('cur-ring');
-  let mx = 0, my = 0, rx = 0, ry = 0;
+  const isTouch = window.matchMedia('(hover: none) and (pointer: coarse)').matches;
 
-  window.addEventListener('mousemove', e => {
-    mx = e.clientX; my = e.clientY;
-    dot.style.left = mx + 'px';
-    dot.style.top  = my + 'px';
-  });
+  if (!isTouch) {
+    const dot  = document.getElementById('cur-dot');
+    const ring = document.getElementById('cur-ring');
+    let mx = 0, my = 0, rx = 0, ry = 0;
 
-  (function animRing() {
-    rx += (mx - rx) * 0.11;
-    ry += (my - ry) * 0.11;
-    ring.style.left = rx + 'px';
-    ring.style.top  = ry + 'px';
-    requestAnimationFrame(animRing);
-  })();
-
-  document.querySelectorAll('a, button, .proj-img-pair-item, .footer-coords, .palette-swatch')
-    .forEach(el => {
-      el.addEventListener('mouseenter', () => {
-        ring.style.width  = '60px';
-        ring.style.height = '60px';
-        ring.style.borderColor = 'rgba(255,255,255,.85)';
-      });
-      el.addEventListener('mouseleave', () => {
-        ring.style.width  = '38px';
-        ring.style.height = '38px';
-        ring.style.borderColor = 'rgba(255,255,255,.55)';
-      });
+    window.addEventListener('mousemove', e => {
+      mx = e.clientX; my = e.clientY;
+      dot.style.left = mx + 'px';
+      dot.style.top  = my + 'px';
     });
+
+    (function animRing() {
+      rx += (mx - rx) * 0.11;
+      ry += (my - ry) * 0.11;
+      ring.style.left = rx + 'px';
+      ring.style.top  = ry + 'px';
+      requestAnimationFrame(animRing);
+    })();
+
+    document.querySelectorAll('a, button, .proj-img-pair-item, .footer-coords, .palette-swatch')
+      .forEach(el => {
+        el.addEventListener('mouseenter', () => {
+          ring.style.width  = '60px';
+          ring.style.height = '60px';
+          ring.style.borderColor = 'rgba(255,255,255,.85)';
+        });
+        el.addEventListener('mouseleave', () => {
+          ring.style.width  = '38px';
+          ring.style.height = '38px';
+          ring.style.borderColor = 'rgba(255,255,255,.55)';
+        });
+      });
+  }
+
+  const coordsEl = document.querySelector('.footer-coords');
+  if (coordsEl && isTouch) {
+    coordsEl.addEventListener('click', () => coordsEl.classList.toggle('active'));
+  }
   </script>
 </body>
 </html>
