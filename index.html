@@ -454,13 +454,17 @@
     .cta-btn {
       display: inline-block;
       padding: 1.1rem 3.5rem;
-      border: 1px solid rgba(242,237,228,.2);
+      border: 1px solid rgba(242,237,228,.35);
       font-family: var(--sans); font-size: .72rem;
       letter-spacing: .15em; text-transform: uppercase;
-      color: rgba(242,237,228,.55);
-      pointer-events: none;
-      opacity: .7;
+      color: rgba(242,237,228,.8);
       border-radius: 1px;
+      transition: border-color .25s, color .25s, background .25s;
+    }
+    .cta-btn:hover {
+      border-color: rgba(242,237,228,.75);
+      color: #F2EDE4;
+      background: rgba(242,237,228,.07);
     }
 
     /* ─── FOOTER ─────────────────────────────────────────────────────── */
@@ -557,6 +561,16 @@
     @media (max-width: 600px) {
       .projects-grid { grid-template-columns: 1fr; }
       .project-card.large { grid-column: span 1; }
+    }
+
+    /* ─── TOUCH / MOBILE ─────────────────────────────────────────────── */
+    @media (hover: none) and (pointer: coarse) {
+      body { cursor: auto; }
+      #cur-dot, #cur-ring { display: none !important; }
+
+      /* coords: desativa hover, ativa via classe .active (JS click) */
+      .footer-coords:hover .footer-city { opacity: 0; transform: translateX(-6px); }
+      .footer-coords.active .footer-city { opacity: 1; transform: translateX(0); }
     }
   </style>
 </head>
@@ -712,12 +726,7 @@
       Explore os projetos ou entre em contato —<br>
       e vamos construir algo bonito juntos.
     </p>
-    <!--
-      Button disabled intentionally — add href when ready.
-      To enable: remove pointer-events:none and opacity from .cta-btn in CSS,
-      then add a real href here.
-    -->
-    <a href="#" class="cta-btn" tabindex="-1" aria-disabled="true">
+    <a href="https://api.whatsapp.com/send?phone=5531973376432&text=Oi%2C+Mateus%21+Vim+pelo+seu+site+e+tenho+interesse+em+tornar+a+%2Aminha+identidade+visual+mais+bela%2A" target="_blank" rel="noopener noreferrer" class="cta-btn">
       Entrar em contato
     </a>
   </section>
@@ -775,7 +784,8 @@
       image:    "assets/projetos/Paula e Erick Casamento/Mockups/stationery.jpg",
       logo:     "assets/projetos/Paula e Erick Casamento/logo.png",
       size:     "large",
-      delay:    0
+      delay:    0,
+      href:     "paula-erick.html"
     },
     {
       name:     "Koss",
@@ -989,38 +999,50 @@
   /* ═══════════════════════════════════════════════════════════════════
      CUSTOM CURSOR
   ═══════════════════════════════════════════════════════════════════ */
-  const dot  = document.getElementById('cur-dot');
-  const ring = document.getElementById('cur-ring');
-  let mx = 0, my = 0, rx = 0, ry = 0;
+  const isTouch = window.matchMedia('(hover: none) and (pointer: coarse)').matches;
 
-  window.addEventListener('mousemove', e => {
-    mx = e.clientX; my = e.clientY;
-    dot.style.left = mx + 'px';
-    dot.style.top  = my + 'px';
-  });
+  if (!isTouch) {
+    const dot  = document.getElementById('cur-dot');
+    const ring = document.getElementById('cur-ring');
+    let mx = 0, my = 0, rx = 0, ry = 0;
 
-  (function animRing() {
-    rx += (mx - rx) * 0.11;
-    ry += (my - ry) * 0.11;
-    ring.style.left = rx + 'px';
-    ring.style.top  = ry + 'px';
-    requestAnimationFrame(animRing);
-  })();
-
-  /* Scale ring on hoverable elements */
-  document.querySelectorAll('a, button, .project-card, .footer-coords')
-    .forEach(el => {
-      el.addEventListener('mouseenter', () => {
-        ring.style.width  = '60px';
-        ring.style.height = '60px';
-        ring.style.borderColor = 'rgba(255,255,255,.85)';
-      });
-      el.addEventListener('mouseleave', () => {
-        ring.style.width  = '38px';
-        ring.style.height = '38px';
-        ring.style.borderColor = 'rgba(255,255,255,.55)';
-      });
+    window.addEventListener('mousemove', e => {
+      mx = e.clientX; my = e.clientY;
+      dot.style.left = mx + 'px';
+      dot.style.top  = my + 'px';
     });
+
+    (function animRing() {
+      rx += (mx - rx) * 0.11;
+      ry += (my - ry) * 0.11;
+      ring.style.left = rx + 'px';
+      ring.style.top  = ry + 'px';
+      requestAnimationFrame(animRing);
+    })();
+
+    /* Scale ring on hoverable elements */
+    document.querySelectorAll('a, button, .project-card, .footer-coords')
+      .forEach(el => {
+        el.addEventListener('mouseenter', () => {
+          ring.style.width  = '60px';
+          ring.style.height = '60px';
+          ring.style.borderColor = 'rgba(255,255,255,.85)';
+        });
+        el.addEventListener('mouseleave', () => {
+          ring.style.width  = '38px';
+          ring.style.height = '38px';
+          ring.style.borderColor = 'rgba(255,255,255,.55)';
+        });
+      });
+  }
+
+  /* Coordenada: click no mobile */
+  const coordsEl = document.querySelector('.footer-coords');
+  if (coordsEl && isTouch) {
+    coordsEl.addEventListener('click', () => {
+      coordsEl.classList.toggle('active');
+    });
+  }
 
   </script>
 </body>

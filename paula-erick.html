@@ -3,78 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KOSS — Identidade Visual · Mateus Almeida</title>
+  <title>Paula & Erick — Identidade Visual · Mateus Almeida</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
   <style>
-    /* ─── FONT FACES ──────────────────────────────────────────────── */
+    /* ─── SFT SCHRIFTED (typography section only) ─────────────────── */
     @font-face {
-      font-family: 'Kiona';
-      src: url('assets/projetos/koss/Fontes/Kiona/Kiona-Bold.ttf') format('truetype');
-      font-weight: 700; font-style: normal;
+      font-family: 'SFT Schrifted Serif';
+      src: url("assets/projetos/Paula e Erick Casamento/FONTES/SFT Schrifited Serif/SFT Schrifted Serif TRIAL Display Regular.ttf") format('truetype');
+      font-weight: 400; font-style: normal; font-display: swap;
     }
     @font-face {
-      font-family: 'Kiona';
-      src: url('assets/projetos/koss/Fontes/Kiona/Kiona-SemiBold.ttf') format('truetype');
-      font-weight: 600; font-style: normal;
+      font-family: 'SFT Schrifted Serif';
+      src: url("assets/projetos/Paula e Erick Casamento/FONTES/SFT Schrifited Serif/SFT Schrifted Serif TRIAL Display Italic.ttf") format('truetype');
+      font-weight: 400; font-style: italic; font-display: swap;
     }
     @font-face {
-      font-family: 'Kiona';
-      src: url('assets/projetos/koss/Fontes/Kiona/Kiona-Regular.ttf') format('truetype');
-      font-weight: 400; font-style: normal;
+      font-family: 'SFT Schrifted Serif';
+      src: url("assets/projetos/Paula e Erick Casamento/FONTES/SFT Schrifited Serif/SFT Schrifted Serif TRIAL Display Light.ttf") format('truetype');
+      font-weight: 300; font-style: normal; font-display: swap;
     }
     @font-face {
-      font-family: 'Kiona';
-      src: url('assets/projetos/koss/Fontes/Kiona/Kiona-Light.ttf') format('truetype');
-      font-weight: 300; font-style: normal;
+      font-family: 'SFT Schrifted Sans';
+      src: url("assets/projetos/Paula e Erick Casamento/FONTES/SFT Schrifted Sans/SFTSchriftedSansTRIAL-Regular.ttf") format('truetype');
+      font-weight: 400; font-style: normal; font-display: swap;
     }
     @font-face {
-      font-family: 'TT Commons';
-      src: url('assets/projetos/koss/Fontes/TT-Commons/TT Commons Regular.otf') format('opentype');
-      font-weight: 400; font-style: normal;
+      font-family: 'SFT Schrifted Sans';
+      src: url("assets/projetos/Paula e Erick Casamento/FONTES/SFT Schrifted Sans/SFTSchriftedSansTRIAL-Light.ttf") format('truetype');
+      font-weight: 300; font-style: normal; font-display: swap;
     }
     @font-face {
-      font-family: 'TT Commons';
-      src: url('assets/projetos/koss/Fontes/TT-Commons/TT Commons Light.otf') format('opentype');
-      font-weight: 300; font-style: normal;
+      font-family: 'SFT Schrifted Sans';
+      src: url("assets/projetos/Paula e Erick Casamento/FONTES/SFT Schrifted Sans/SFTSchriftedSansTRIAL-Medium.ttf") format('truetype');
+      font-weight: 500; font-style: normal; font-display: swap;
     }
-    @font-face {
-      font-family: 'TT Commons';
-      src: url('assets/projetos/koss/Fontes/TT-Commons/TT Commons Medium.otf') format('opentype');
-      font-weight: 500; font-style: normal;
-    }
-    @font-face {
-      font-family: 'TT Commons';
-      src: url('assets/projetos/koss/Fontes/TT-Commons/TT Commons Bold.otf') format('opentype');
-      font-weight: 700; font-style: normal;
-    }
-    @font-face {
-      font-family: 'TT Commons';
-      src: url('assets/projetos/koss/Fontes/TT-Commons/TT Commons ExtraBold.otf') format('opentype');
-      font-weight: 800; font-style: normal;
-    }
-
     /* ─── VARIABLES ──────────────────────────────────────────────── */
     :root {
       --bg:           #F2EDE4;
       --text:         #1A1714;
       --text-muted:   #7A7168;
-      --accent:       #C4954A;
+      --accent:       #B89A6A;
       --accent-light: #E8DDD0;
       --border:       rgba(26, 23, 20, 0.09);
       --serif:        "Instrument Serif", serif;
       --sans:         "Inter", sans-serif;
-      --kiona:        'Kiona', 'Inter', sans-serif;
-      --ttcommons:    'TT Commons', 'Inter', sans-serif;
-      /* KOSS Brand Palette */
-      --koss-negro:   #0E0D0B;
-      --koss-ouro:    #C4954A;
-      --koss-verde:   #1C3A28;
-      --koss-musgo:   #8A9B6E;
-      --koss-creme:   #F0EBE0;
+      /* Brand Palette — Paula & Erick */
+      --pe-hero:      #191d0e;
+      --pe-musgo:     #5d6844;
+      --pe-oliva:     #858344;
+      --pe-bege:      #b2ae76;
+      --pe-marfim:    #e6e4d5;
+      --pe-terracota: #804d35;
+      --pe-areia:     #af9688;
     }
 
     /* ─── RESET ──────────────────────────────────────────────────── */
@@ -130,7 +114,7 @@
     .nav-logo {
       font-family: var(--serif); font-style: italic;
       font-size: 1.05rem; letter-spacing: .02em;
-      color: rgba(240,235,224,.8);
+      color: rgba(230,228,213,.82);
       transition: color .4s;
     }
     nav.scrolled .nav-logo { color: var(--text); }
@@ -138,9 +122,9 @@
     .nav-links a {
       font-family: var(--sans); font-size: .72rem; font-weight: 400;
       letter-spacing: .1em; text-transform: uppercase;
-      color: rgba(240,235,224,.32); transition: color .3s;
+      color: rgba(230,228,213,.32); transition: color .3s;
     }
-    .nav-links a:hover { color: rgba(240,235,224,.75); }
+    .nav-links a:hover { color: rgba(230,228,213,.75); }
     nav.scrolled .nav-links a { color: var(--text-muted); }
     nav.scrolled .nav-links a:hover { color: var(--text); }
 
@@ -155,8 +139,8 @@
     /* ─── PROJECT HERO ───────────────────────────────────────────── */
     .proj-hero {
       min-height: 100vh;
-      background: var(--koss-negro);
-      color: var(--koss-creme);
+      background: var(--pe-hero);
+      color: var(--pe-marfim);
       display: flex; flex-direction: column;
       justify-content: center; align-items: center;
       text-align: center;
@@ -166,26 +150,25 @@
     .hero-glow {
       position: absolute; inset: 0; pointer-events: none;
       background:
-        radial-gradient(ellipse 60% 50% at 50% 50%, rgba(28,58,40,.45) 0%, transparent 70%),
-        radial-gradient(ellipse 40% 30% at 70% 60%, rgba(196,149,74,.05) 0%, transparent 60%);
+        radial-gradient(ellipse 70% 55% at 50% 50%, rgba(93,104,68,.22) 0%, transparent 70%),
+        radial-gradient(ellipse 35% 25% at 72% 65%, rgba(175,150,136,.07) 0%, transparent 60%);
     }
     .hero-vline {
       position: absolute;
-      right: 8vw; top: 50%; transform: translateY(-50%);
-      width: 1px; height: 100px;
-      background: linear-gradient(to bottom, transparent, rgba(196,149,74,.4), transparent);
+      right: 7vw; top: 50%; transform: translateY(-50%);
+      width: 1px; height: 90px;
+      background: linear-gradient(to bottom, transparent, rgba(178,174,118,.3), transparent);
     }
     .hero-vline-left {
       position: absolute;
-      left: 8vw; top: 50%; transform: translateY(-50%);
-      width: 1px; height: 100px;
-      background: linear-gradient(to bottom, transparent, rgba(196,149,74,.2), transparent);
+      left: 7vw; top: 50%; transform: translateY(-50%);
+      width: 1px; height: 90px;
+      background: linear-gradient(to bottom, transparent, rgba(178,174,118,.15), transparent);
     }
-
     .proj-hero-tag {
-      font-family: var(--ttcommons); font-size: .68rem; font-weight: 400;
+      font-family: var(--sans); font-size: .68rem; font-weight: 400;
       letter-spacing: .28em; text-transform: uppercase;
-      color: var(--koss-ouro); margin-bottom: 3.5rem;
+      color: var(--pe-bege); margin-bottom: 3.5rem;
       opacity: 0;
       animation: fadeUp .8s ease .2s forwards;
     }
@@ -194,12 +177,9 @@
       font-weight: 400;
       font-size: clamp(4rem, 9vw, 11rem);
       line-height: 1.02; letter-spacing: -.025em;
-      color: var(--koss-creme);
+      color: var(--pe-marfim);
     }
-    .proj-hero-title em {
-      font-style: italic;
-      color: var(--koss-ouro);
-    }
+    .proj-hero-title em { font-style: italic; color: var(--pe-bege); }
     .hl { display: block; overflow: hidden; padding-bottom: .18em; margin-bottom: -.18em; }
     .hl-inner {
       display: block;
@@ -208,11 +188,10 @@
     }
     .hl:nth-child(1) .hl-inner { animation-delay: .32s; }
     .hl:nth-child(2) .hl-inner { animation-delay: .52s; }
-
     .proj-hero-sub {
-      font-family: var(--ttcommons); font-size: clamp(.82rem, 1.1vw, .95rem);
-      font-weight: 300; color: rgba(240,235,224,.32);
-      margin-top: 3.5rem; max-width: 40ch; line-height: 1.95;
+      font-family: var(--sans); font-size: clamp(.82rem, 1.1vw, .95rem);
+      font-weight: 300; color: rgba(230,228,213,.35);
+      margin-top: 3.5rem; max-width: 42ch; line-height: 1.95;
       opacity: 0; transform: translateY(18px);
       animation: fadeUp .9s ease 1.05s forwards;
       letter-spacing: .04em;
@@ -223,13 +202,13 @@
       opacity: 0; animation: fadeUp .8s ease 1.5s forwards;
     }
     .proj-hero-scroll span {
-      font-family: var(--ttcommons); font-size: .6rem;
+      font-family: var(--sans); font-size: .6rem;
       letter-spacing: .22em; text-transform: uppercase;
-      color: rgba(240,235,224,.22);
+      color: rgba(230,228,213,.22);
     }
     .proj-hero-scroll-line {
       width: 1px; height: 3rem;
-      background: linear-gradient(to bottom, transparent, var(--koss-ouro));
+      background: linear-gradient(to bottom, transparent, var(--pe-bege));
       animation: scrollBeat 2s ease-in-out infinite;
     }
 
@@ -244,7 +223,7 @@
     }
     .proj-info-item:last-child { border-right: none; }
     .proj-info-label {
-      font-family: var(--ttcommons); font-size: .63rem; font-weight: 500;
+      font-family: var(--sans); font-size: .63rem; font-weight: 500;
       letter-spacing: .18em; text-transform: uppercase;
       color: var(--accent); display: block; margin-bottom: .75rem;
     }
@@ -259,7 +238,7 @@
     }
     .proj-statement-inner { max-width: 900px; margin: 0 auto; }
     .sec-label {
-      font-family: var(--ttcommons); font-size: .66rem; font-weight: 500;
+      font-family: var(--sans); font-size: .66rem; font-weight: 500;
       letter-spacing: .2em; text-transform: uppercase;
       color: var(--accent); margin-bottom: 2rem;
       display: block;
@@ -276,30 +255,45 @@
       height: 78vh;
     }
     .proj-img-full img {
-      width: 100%; height: 115%; object-fit: cover;
+      position: absolute; top: 50%; left: 0;
+      width: 100%; height: 160%; object-fit: cover;
       will-change: transform;
+      transform: translateY(-50%);
     }
 
     /* ─── LOGO REVEAL ─────────────────────────────────────────────── */
     .proj-logo-section {
-      background: var(--koss-verde);
-      display: flex; align-items: center; justify-content: center;
-      padding: 8rem 4rem;
+      background: var(--pe-marfim);
+      display: grid; grid-template-columns: 1fr 1px 1fr;
+      align-items: center;
+      padding: 7rem 6rem;
       position: relative; overflow: hidden;
+      gap: 5rem;
     }
     .proj-logo-section::before {
       content: '';
       position: absolute; inset: 0;
-      background: radial-gradient(ellipse at center, rgba(196,149,74,.06) 0%, transparent 65%);
+      background: radial-gradient(ellipse 80% 60% at 50% 50%, rgba(93,104,68,.06) 0%, transparent 65%);
+    }
+    .proj-logo-divider {
+      width: 1px; height: 140px; align-self: center;
+      background: rgba(26,23,20,.12);
+    }
+    .proj-logo-item {
+      display: flex; flex-direction: column; align-items: center; gap: 1.6rem;
     }
     .proj-logo-reveal {
-      max-width: 260px; width: 40%;
-      filter: brightness(0) invert(1);
-      opacity: 0; transform: scale(.88);
+      max-width: 320px; width: 100%;
+      opacity: 0; transform: scale(.9);
       transition: opacity 1.3s cubic-bezier(.22,1,.36,1),
                   transform 1.5s cubic-bezier(.34,1.56,.64,1);
     }
     .proj-logo-reveal.visible { opacity: 1; transform: scale(1); }
+    .proj-logo-caption {
+      font-family: var(--sans); font-size: .6rem;
+      letter-spacing: .18em; text-transform: uppercase;
+      color: var(--text-muted);
+    }
 
     /* ─── CONCEPT SECTION ─────────────────────────────────────────── */
     .proj-concept {
@@ -320,9 +314,54 @@
       font-size: clamp(1.05rem, 1.5vw, 1.22rem);
       line-height: 1.82;
     }
-
+    .proj-grid-wrap {
+      overflow: hidden; border-radius: 2px;
+      width: 100%; display: flex; align-items: center;
+    }
     .proj-grid-img {
-      width: 100%;
+      width: 100%; display: block;
+      will-change: transform;
+    }
+
+    /* ─── DESIGN AXES ─────────────────────────────────────────────── */
+    .proj-axes {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 8rem; align-items: center;
+      padding: 9rem 4rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .axes-track {
+      display: flex; align-items: center;
+      gap: 1.6rem;
+      margin-bottom: 2.8rem;
+    }
+    .axes-track:last-child { margin-bottom: 0; }
+    .axes-label {
+      font-family: var(--sans); font-size: .61rem;
+      letter-spacing: .12em; text-transform: uppercase;
+      color: var(--text); white-space: nowrap;
+      width: 9rem; flex-shrink: 0;
+    }
+    .axes-label-right {
+      font-family: var(--sans); font-size: .61rem;
+      letter-spacing: .12em; text-transform: uppercase;
+      color: var(--text-muted); white-space: nowrap;
+      text-align: right;
+      width: 9rem; flex-shrink: 0;
+      font-style: italic;
+    }
+    .axes-line {
+      flex: 1;
+      position: relative;
+      height: 1px;
+      background: rgba(26,23,20,.1);
+    }
+    .axes-dot {
+      position: absolute;
+      top: 50%; transform: translate(-50%, -50%);
+      width: 9px; height: 9px;
+      background: var(--pe-musgo);
+      border-radius: 50%;
     }
 
     /* ─── IMAGE PAIR ──────────────────────────────────────────────── */
@@ -352,7 +391,7 @@
 
     /* ─── COLOR PALETTE ───────────────────────────────────────────── */
     .palette-grid {
-      display: grid; grid-template-columns: repeat(5, 1fr);
+      display: grid; grid-template-columns: repeat(6, 1fr);
       gap: 1.5rem; margin-top: 4rem;
     }
     .palette-item { display: flex; flex-direction: column; gap: .85rem; }
@@ -362,39 +401,39 @@
     }
     .palette-swatch:hover { transform: translateY(-6px); }
     .palette-name {
-      font-family: var(--ttcommons); font-size: .72rem;
+      font-family: var(--sans); font-size: .72rem;
       font-weight: 500; letter-spacing: .03em; line-height: 1.3;
     }
     .palette-hex {
-      font-family: var(--ttcommons); font-size: .63rem;
+      font-family: var(--sans); font-size: .63rem;
       color: var(--text-muted); letter-spacing: .07em;
     }
 
-    /* ─── TYPOGRAPHY — DARK SECTION ──────────────────────────────── */
-    .proj-dark-section {
-      background: var(--koss-negro);
+    /* ─── TYPOGRAPHY — EARTH SECTION ─────────────────────────────── */
+    .proj-earth-section {
+      background: var(--pe-musgo);
       padding: 9rem 4rem;
       position: relative; overflow: hidden;
     }
-    .proj-dark-section::before {
+    .proj-earth-section::before {
       content: '';
       position: absolute;
       top: 0; left: 4rem; right: 4rem;
       height: 1px;
-      background: linear-gradient(to right, transparent, rgba(196,149,74,.25), transparent);
+      background: linear-gradient(to right, transparent, rgba(178,174,118,.3), transparent);
     }
-    .proj-dark-section::after {
+    .proj-earth-section::after {
       content: '';
       position: absolute;
       bottom: 0; left: 4rem; right: 4rem;
       height: 1px;
-      background: linear-gradient(to right, transparent, rgba(196,149,74,.25), transparent);
+      background: linear-gradient(to right, transparent, rgba(178,174,118,.3), transparent);
     }
-    .proj-dark-section .proj-section-inner { max-width: 1000px; margin: 0 auto; }
-    .proj-dark-section .sec-label { color: var(--koss-ouro); }
-    .proj-dark-section .sec-title { color: var(--koss-creme); }
-    .proj-dark-section .sec-title em { color: var(--koss-ouro); }
-    .proj-dark-section .proj-body-text { color: rgba(240,235,224,.42); }
+    .proj-earth-section .proj-section-inner { max-width: 1000px; margin: 0 auto; }
+    .proj-earth-section .sec-label { color: var(--pe-bege); }
+    .proj-earth-section .sec-title { color: var(--pe-marfim); }
+    .proj-earth-section .sec-title em { color: var(--pe-bege); }
+    .proj-earth-section .proj-body-text { color: rgba(230,228,213,.48); }
 
     .type-grid {
       display: grid; grid-template-columns: 1fr 1fr;
@@ -403,61 +442,33 @@
     .type-sample {
       margin-bottom: 1.2rem;
       padding-bottom: 1.2rem;
-      border-bottom: 1px solid rgba(240,235,224,.08);
+      border-bottom: 1px solid rgba(230,228,213,.08);
     }
     .type-sample-text {
-      font-size: clamp(2.4rem, 4vw, 4.5rem);
-      letter-spacing: .04em; line-height: 1.05;
+      font-size: clamp(2.2rem, 3.8vw, 4rem);
+      letter-spacing: -.01em; line-height: 1.1;
+      color: var(--pe-marfim);
     }
     .type-name {
-      font-family: var(--ttcommons); font-size: .68rem;
+      font-family: var(--sans); font-size: .68rem;
       text-transform: uppercase; letter-spacing: .16em;
-      color: rgba(240,235,224,.35);
+      color: rgba(230,228,213,.35);
     }
     .type-role {
-      font-family: var(--ttcommons); font-size: .63rem;
-      color: var(--koss-ouro); margin-top: .4rem; letter-spacing: .06em;
+      font-family: var(--sans); font-size: .63rem;
+      color: var(--pe-bege); margin-top: .4rem; letter-spacing: .06em;
     }
     .type-weights-row {
       display: flex; gap: 1.5rem; margin-top: 1.8rem; flex-wrap: wrap;
     }
     .type-weight-chip {
-      font-family: var(--ttcommons); font-size: .62rem;
+      font-family: var(--sans); font-size: .62rem;
       letter-spacing: .12em; text-transform: uppercase;
-      color: rgba(240,235,224,.25);
+      color: rgba(230,228,213,.25);
       padding: .35rem .8rem;
-      border: 1px solid rgba(240,235,224,.08);
+      border: 1px solid rgba(230,228,213,.1);
       border-radius: 1px;
     }
-
-    /* ─── MOSAIC — 3 IMAGES ───────────────────────────────────────── */
-    .proj-mosaic-wrap {
-      padding: 1.5rem;
-      background: var(--bg);
-    }
-    .proj-mosaic {
-      display: grid;
-      grid-template-columns: 3fr 2fr;
-      grid-template-rows: 1fr 1fr;
-      gap: 1.5rem;
-      height: 86vh;
-    }
-    .proj-mosaic-main {
-      grid-row: 1 / 3;
-      overflow: hidden;
-      border-radius: 3px;
-    }
-    .proj-mosaic-side {
-      overflow: hidden;
-      border-radius: 3px;
-    }
-    .proj-mosaic-main img,
-    .proj-mosaic-side img {
-      width: 100%; height: 100%; object-fit: cover;
-      transition: transform 1.1s cubic-bezier(.25,.46,.45,.94);
-    }
-    .proj-mosaic-main:hover img,
-    .proj-mosaic-side:hover img { transform: scale(1.05); }
 
     /* ─── BACK CTA ────────────────────────────────────────────────── */
     .proj-back-cta {
@@ -467,7 +478,7 @@
       text-align: center;
     }
     .proj-back-label {
-      font-family: var(--ttcommons); font-size: .68rem; font-weight: 500;
+      font-family: var(--sans); font-size: .68rem; font-weight: 500;
       letter-spacing: .25em; text-transform: uppercase;
       color: var(--accent); margin-bottom: 2.2rem;
     }
@@ -482,14 +493,14 @@
       display: inline-flex; align-items: center; gap: .9rem;
       padding: 1.1rem 3.2rem;
       border: 1px solid rgba(242,237,228,.18);
-      font-family: var(--ttcommons); font-size: .72rem; font-weight: 400;
+      font-family: var(--sans); font-size: .72rem; font-weight: 400;
       letter-spacing: .18em; text-transform: uppercase;
       color: rgba(242,237,228,.45);
       border-radius: 1px;
       transition: border-color .3s, color .3s;
     }
     .proj-back-btn:hover {
-      border-color: rgba(196,149,74,.5);
+      border-color: rgba(184,154,106,.5);
       color: var(--accent);
     }
 
@@ -521,13 +532,13 @@
       letter-spacing: .04em; margin-bottom: .35rem;
     }
     .footer-role {
-      font-family: var(--ttcommons); font-size: .72rem; font-weight: 400;
+      font-family: var(--sans); font-size: .72rem; font-weight: 400;
       letter-spacing: .14em; text-transform: uppercase;
       color: var(--text-muted); margin-bottom: 1.75rem;
     }
     .footer-coords {
       display: inline-flex; align-items: center; gap: .5rem;
-      font-family: var(--ttcommons); font-size: .78rem;
+      font-family: var(--sans); font-size: .78rem;
       color: var(--text-muted); letter-spacing: .04em;
       cursor: default;
     }
@@ -544,7 +555,7 @@
       display: flex; justify-content: center; gap: 3rem;
     }
     .footer-bottom a {
-      font-family: var(--ttcommons); font-size: .68rem;
+      font-family: var(--sans); font-size: .68rem;
       letter-spacing: .12em; text-transform: uppercase;
       color: var(--text-muted); transition: color .3s;
     }
@@ -574,19 +585,18 @@
       .proj-info-item:nth-child(1),
       .proj-info-item:nth-child(2) { border-bottom: 1px solid var(--border); }
       .proj-statement { padding: 6rem 2rem; }
-      .proj-section  { padding: 6rem 2rem; }
-      .proj-dark-section { padding: 6rem 2rem; }
+      .proj-section   { padding: 6rem 2rem; }
+      .proj-earth-section { padding: 6rem 2rem; }
+      .proj-logo-section { grid-template-columns: 1fr; gap: 3rem; padding: 5rem 2rem; }
+      .proj-logo-divider { width: 80px; height: 1px; }
       .proj-concept { grid-template-columns: 1fr; gap: 3rem; padding: 6rem 2rem; }
+      .proj-axes    { grid-template-columns: 1fr; gap: 3rem; padding: 6rem 2rem; }
       .proj-img-pair { grid-template-columns: 1fr; }
       .proj-img-full { height: 55vw; }
       .palette-grid { grid-template-columns: repeat(3, 1fr); }
       .type-grid { grid-template-columns: 1fr; }
       .proj-back-cta { padding: 7rem 2rem; }
       footer { padding: 5rem 2rem 3rem; }
-      .proj-mosaic-wrap { padding: .75rem; }
-      .proj-mosaic { grid-template-columns: 1fr; grid-template-rows: auto; height: auto; gap: .75rem; }
-      .proj-mosaic-main { grid-row: auto; aspect-ratio: 4/3; }
-      .proj-mosaic-side { aspect-ratio: 4/3; }
     }
     @media (max-width: 600px) {
       .proj-info-strip { grid-template-columns: 1fr; }
@@ -594,9 +604,10 @@
       .palette-grid { grid-template-columns: repeat(2, 1fr); }
       .hero-vline, .hero-vline-left { display: none; }
       .proj-hero-title { font-size: clamp(3.5rem, 15vw, 6rem); }
+      .axes-label, .axes-label-right { width: 6rem; font-size: .54rem; }
     }
 
-    /* ─── TOUCH / MOBILE ─────────────────────────────────────────────── */
+    /* ─── TOUCH / MOBILE ─────────────────────────────────────────── */
     @media (hover: none) and (pointer: coarse) {
       body { cursor: auto; }
       #cur-dot, #cur-ring { display: none !important; }
@@ -626,17 +637,17 @@
     <div class="hero-vline" aria-hidden="true"></div>
     <div class="hero-vline-left" aria-hidden="true"></div>
 
-    <p class="proj-hero-tag">Identidade Visual &middot; Moda Premium &middot; 2024</p>
+    <p class="proj-hero-tag">Identidade Visual &middot; Casamento &middot; 2026</p>
 
     <h1 class="proj-hero-title">
-      <span class="hl"><span class="hl-inner">A grife</span></span>
-      <span class="hl"><span class="hl-inner">que <em>acolhe.</em></span></span>
+      <span class="hl"><span class="hl-inner">Amor que não</span></span>
+      <span class="hl"><span class="hl-inner"><em>envelhece.</em></span></span>
     </h1>
 
     <p class="proj-hero-sub">
-      Uma grife construída sobre uma palavra norueguesa
-      sem tradução perfeita: bem-estar, conforto,
-      alegria silenciosa. Exclusividade que ainda sabe acolher.
+      A identidade de Paula & Erick — construída sobre palavras,
+      símbolos e a essência de uma união que não pede atenção.
+      Ela simplesmente existe.
     </p>
 
     <div class="proj-hero-scroll">
@@ -649,11 +660,11 @@
   <div class="proj-info-strip">
     <div class="proj-info-item reveal">
       <span class="proj-info-label">Cliente</span>
-      <span class="proj-info-value">KOSS</span>
+      <span class="proj-info-value">Paula &amp; Erick</span>
     </div>
     <div class="proj-info-item reveal" style="transition-delay:.08s">
       <span class="proj-info-label">Segmento</span>
-      <span class="proj-info-value">Moda Premium<br>Alto Padrão</span>
+      <span class="proj-info-value">Casamento<br>Identidade Nupcial</span>
     </div>
     <div class="proj-info-item reveal" style="transition-delay:.16s">
       <span class="proj-info-label">Serviço</span>
@@ -661,7 +672,7 @@
     </div>
     <div class="proj-info-item reveal" style="transition-delay:.24s">
       <span class="proj-info-label">Ano</span>
-      <span class="proj-info-value">2024</span>
+      <span class="proj-info-value">2026</span>
     </div>
   </div>
 
@@ -670,7 +681,7 @@
     <div class="proj-statement-inner">
       <span class="sec-label reveal">O Projeto</span>
       <p class="proj-statement-body" id="projStatement">
-        KOSS vem de kos — palavra norueguesa que não tem tradução exata. Algo entre conforto, alegria e bem-estar. A identidade nasce daí: do luxo que não intimida, da exclusividade que ainda sabe acolher.
+        Paula &amp; Erick não precisavam de uma decoração. Precisavam de uma linguagem. Uma identidade capaz de traduzir, numa só imagem, o que companheirismo, amor e lealdade significam quando são reais.
       </p>
     </div>
   </section>
@@ -678,19 +689,32 @@
   <!-- ─── FULL BLEED 1 ─────────────────────────────────────────────── -->
   <div class="proj-img-full">
     <img
-      src="assets/projetos/koss/Mockups/01.jpg"
-      alt="KOSS — Identidade Visual"
+      src="assets/projetos/Paula e Erick Casamento/Mockups/stationery.jpg"
+      alt="Paula &amp; Erick — Papelaria"
       id="imgP1"
     >
   </div>
 
   <!-- ─── LOGO REVEAL ───────────────────────────────────────────────── -->
   <div class="proj-logo-section">
-    <img
-      src="assets/projetos/koss/logo.png"
-      alt="Logotipo KOSS"
-      class="proj-logo-reveal reveal"
-    >
+    <div class="proj-logo-item">
+      <img
+        src="assets/projetos/Paula e Erick Casamento/logo.png"
+        alt="Logotipo Paula &amp; Erick"
+        class="proj-logo-reveal"
+      >
+      <span class="proj-logo-caption">Logotipo</span>
+    </div>
+    <div class="proj-logo-divider"></div>
+    <div class="proj-logo-item">
+      <img
+        src="assets/projetos/Paula e Erick Casamento/LOGOS_Página 1.png"
+        alt="Monograma Paula &amp; Erick"
+        class="proj-logo-reveal"
+        style="max-width:200px; transition-delay:.25s"
+      >
+      <span class="proj-logo-caption">Monograma</span>
+    </div>
   </div>
 
   <!-- ─── CONCEPT ───────────────────────────────────────────────────── -->
@@ -698,30 +722,67 @@
     <div class="proj-concept-text">
       <span class="sec-label reveal">Conceito</span>
       <h2 class="proj-big-title reveal" style="transition-delay:.1s">
-        Um K,<br>
-        <em>um frame.</em>
+        Um monograma.<br>
+        <em>Um trem.</em>
       </h2>
       <p class="proj-body-text" id="conceptBody">
-        O símbolo é a letra K construída com linhas que se entrelaçam como fios de tecido — evocando tecelagem, conexão e sofisticação orgânica. O quadrado que a enquadra não limita: define. Autoridade que carrega movimento. Estrutura que sabe ser fluida.
+        O monograma nasce da trajetória do casal — síntese visual de um caminho percorrido juntos. O trem aparece como elemento de apoio: silhueta limpa, coração na chaminé. O que move a máquina é o amor. Cada elemento foi pensado para traduzir solidez e verdade, não ornamento.
       </p>
     </div>
-    <div>
+    <div class="proj-grid-wrap reveal" style="transition-delay:.2s">
       <img
-        src="assets/projetos/koss/grid.png"
-        alt="Grid construtivo da marca KOSS"
-        class="proj-grid-img reveal"
-        style="transition-delay:.2s"
+        src="assets/projetos/Paula e Erick Casamento/grid.png"
+        alt="Grid construtivo da identidade Paula &amp; Erick"
+        class="proj-grid-img"
+        id="imgGrid"
       >
+    </div>
+  </section>
+
+  <!-- ─── DESIGN AXES ───────────────────────────────────────────────── -->
+  <section class="proj-axes">
+    <div>
+      <span class="sec-label reveal">Processo Criativo</span>
+      <h2 class="proj-big-title reveal" style="transition-delay:.1s">
+        O tom de<br>
+        <em>uma identidade.</em>
+      </h2>
+      <p class="proj-body-text reveal" style="transition-delay:.2s; max-width:44ch">
+        Três eixos guiaram cada decisão criativa. Do clássico ao moderno, do minimal ao essencial — cada elemento passou por esse filtro antes de chegar ao papel.
+      </p>
+    </div>
+    <div class="reveal" style="transition-delay:.3s">
+      <div class="axes-track">
+        <span class="axes-label">Clássico</span>
+        <div class="axes-line">
+          <div class="axes-dot" style="left:22%"></div>
+        </div>
+        <span class="axes-label-right">Extravagante</span>
+      </div>
+      <div class="axes-track">
+        <span class="axes-label">Minimalismo</span>
+        <div class="axes-line">
+          <div class="axes-dot" style="left:18%"></div>
+        </div>
+        <span class="axes-label-right">Maximalismo</span>
+      </div>
+      <div class="axes-track">
+        <span class="axes-label">Moderno</span>
+        <div class="axes-line">
+          <div class="axes-dot" style="left:28%"></div>
+        </div>
+        <span class="axes-label-right">Antiquado</span>
+      </div>
     </div>
   </section>
 
   <!-- ─── IMAGE PAIR 1 ─────────────────────────────────────────────── -->
   <div class="proj-img-pair">
     <div class="proj-img-pair-item">
-      <img src="assets/projetos/koss/Mockups/02.jpg" alt="KOSS — Aplicação" loading="lazy">
+      <img src="assets/projetos/Paula e Erick Casamento/Mockups/book.jpg" alt="Paula &amp; Erick — Manual" loading="lazy">
     </div>
     <div class="proj-img-pair-item">
-      <img src="assets/projetos/koss/Mockups/03.jpg" alt="KOSS — Aplicação" loading="lazy">
+      <img src="assets/projetos/Paula e Erick Casamento/Mockups/menu.jpg" alt="Paula &amp; Erick — Menu" loading="lazy">
     </div>
   </div>
 
@@ -730,38 +791,41 @@
     <div class="proj-section-inner">
       <span class="sec-label reveal">Paleta Cromática</span>
       <h2 class="sec-title reveal" style="transition-delay:.08s">
-        Cinco cores.<br><em>Uma atmosfera.</em>
+        Seis cores.<br><em>Uma terra.</em>
       </h2>
-      <p class="proj-body-text reveal" style="transition-delay:.16s; max-width:52ch; margin-top:1.8rem">
-        Extraídas de paisagens do norte e da terra úmida.
-        Cada nome carrega intenção. Cada tom, uma camada de significado.
-        Nenhuma cor por acidente.
+      <p class="proj-body-text reveal" style="transition-delay:.16s; max-width:54ch; margin-top:1.8rem">
+        Tons extraídos do solo, da folha e do calor da tarde. Cada nome carrega a atmosfera de um amor maduro, sólido, acolhedor. Nenhuma cor por acidente.
       </p>
       <div class="palette-grid">
         <div class="palette-item reveal" style="transition-delay:.05s">
-          <div class="palette-swatch" style="background:#1C3A28"></div>
-          <span class="palette-name">Verde Floresta</span>
-          <span class="palette-hex">#1C3A28</span>
+          <div class="palette-swatch" style="background:#5d6844"></div>
+          <span class="palette-name">Verde Musgo</span>
+          <span class="palette-hex">#5d6844</span>
         </div>
-        <div class="palette-item reveal" style="transition-delay:.12s">
-          <div class="palette-swatch" style="background:#8A9B6E"></div>
-          <span class="palette-name">Musgo Serrano</span>
-          <span class="palette-hex">#8A9B6E</span>
+        <div class="palette-item reveal" style="transition-delay:.1s">
+          <div class="palette-swatch" style="background:#858344"></div>
+          <span class="palette-name">Verde Oliva</span>
+          <span class="palette-hex">#858344</span>
         </div>
-        <div class="palette-item reveal" style="transition-delay:.19s">
-          <div class="palette-swatch" style="background:#0E0D0B"></div>
-          <span class="palette-name">Negro Lapso</span>
-          <span class="palette-hex">#0E0D0B</span>
+        <div class="palette-item reveal" style="transition-delay:.15s">
+          <div class="palette-swatch" style="background:#b2ae76"></div>
+          <span class="palette-name">Bege Sereno</span>
+          <span class="palette-hex">#b2ae76</span>
         </div>
-        <div class="palette-item reveal" style="transition-delay:.26s">
-          <div class="palette-swatch" style="background:#C4954A"></div>
-          <span class="palette-name">Ouro Discreto</span>
-          <span class="palette-hex">#C4954A</span>
+        <div class="palette-item reveal" style="transition-delay:.2s">
+          <div class="palette-swatch" style="background:#e6e4d5; border:1px solid rgba(26,23,20,.09)"></div>
+          <span class="palette-name">Marfim</span>
+          <span class="palette-hex">#e6e4d5</span>
         </div>
-        <div class="palette-item reveal" style="transition-delay:.33s">
-          <div class="palette-swatch" style="background:#F0EBE0; border:1px solid rgba(26,23,20,.09)"></div>
-          <span class="palette-name">Linho Natural</span>
-          <span class="palette-hex">#F0EBE0</span>
+        <div class="palette-item reveal" style="transition-delay:.25s">
+          <div class="palette-swatch" style="background:#804d35"></div>
+          <span class="palette-name">Terracota</span>
+          <span class="palette-hex">#804d35</span>
+        </div>
+        <div class="palette-item reveal" style="transition-delay:.3s">
+          <div class="palette-swatch" style="background:#af9688"></div>
+          <span class="palette-name">Areia Rosada</span>
+          <span class="palette-hex">#af9688</span>
         </div>
       </div>
     </div>
@@ -770,52 +834,50 @@
   <!-- ─── FULL BLEED 2 ─────────────────────────────────────────────── -->
   <div class="proj-img-full" style="height:66vh">
     <img
-      src="assets/projetos/koss/Mockups/04.jpg"
-      alt="KOSS — Manual de Marca"
+      src="assets/projetos/Paula e Erick Casamento/Mockups/selo.jpg"
+      alt="Paula &amp; Erick — Selo de Cera"
       id="imgP2"
       loading="lazy"
     >
   </div>
 
-  <!-- ─── TYPOGRAPHY — dark section ───────────────────────────────── -->
-  <section class="proj-dark-section">
+  <!-- ─── TYPOGRAPHY — EARTH SECTION ───────────────────────────────── -->
+  <section class="proj-earth-section">
     <div class="proj-section-inner">
       <span class="sec-label reveal">Tipografia</span>
       <h2 class="sec-title reveal" style="transition-delay:.08s">
-        Palavras<br><em>que vestem bem.</em>
+        Palavras que<br><em>se casam.</em>
       </h2>
       <p class="proj-body-text reveal" style="transition-delay:.16s; max-width:52ch; margin-top:1.8rem; margin-bottom:0">
-        Kiona e TT Commons sustentam a identidade com presença e precisão — famílias geométricas que carregam autoridade sem abrir mão de contemporaneidade.
+        SFT Schrifted equilibra tradição e leveza numa só família. Serif e sans que compartilham a mesma origem — proporções alinhadas, elegância partilhada.
       </p>
       <div class="type-grid reveal" style="transition-delay:.28s">
         <div>
           <div class="type-sample">
-            <div class="type-sample-text" style="font-family:var(--kiona); font-weight:700; color:var(--koss-creme); letter-spacing:.1em; text-transform:uppercase">
-              KIONA
+            <div class="type-sample-text" style="font-family:'SFT Schrifted Serif',var(--serif); font-style:italic; letter-spacing:-.02em">
+              SFT Schrifted<br>Serif
             </div>
           </div>
           <div class="type-name">Família Primária</div>
-          <div class="type-role">Display · Títulos · Assinatura</div>
+          <div class="type-role">Display · Títulos · Monograma</div>
           <div class="type-weights-row">
             <span class="type-weight-chip">Light</span>
             <span class="type-weight-chip">Regular</span>
-            <span class="type-weight-chip">SemiBold</span>
-            <span class="type-weight-chip" style="border-color:rgba(196,149,74,.3); color:var(--koss-ouro)">Bold</span>
+            <span class="type-weight-chip" style="border-color:rgba(178,174,118,.3); color:var(--pe-bege)">Italic</span>
           </div>
         </div>
         <div>
           <div class="type-sample">
-            <div class="type-sample-text" style="font-family:var(--ttcommons); font-weight:300; color:var(--koss-creme)">
-              TT Commons
+            <div class="type-sample-text" style="font-family:'SFT Schrifted Sans',var(--sans); font-weight:300; letter-spacing:.04em">
+              SFT Schrifted<br>Sans
             </div>
           </div>
           <div class="type-name">Família Secundária</div>
-          <div class="type-role">Corpo · Interface · Suporte</div>
+          <div class="type-role">Corpo · Papelaria · Menus</div>
           <div class="type-weights-row">
             <span class="type-weight-chip">Light</span>
             <span class="type-weight-chip">Regular</span>
             <span class="type-weight-chip">Medium</span>
-            <span class="type-weight-chip">Bold</span>
           </div>
         </div>
       </div>
@@ -825,36 +887,21 @@
   <!-- ─── IMAGE PAIR 2 ─────────────────────────────────────────────── -->
   <div class="proj-img-pair">
     <div class="proj-img-pair-item">
-      <img src="assets/projetos/koss/Mockups/06.jpg" alt="KOSS — Aplicação" loading="lazy">
+      <img src="assets/projetos/Paula e Erick Casamento/Mockups/guardanapo.jpg" alt="Paula &amp; Erick — Guardanapo" loading="lazy">
     </div>
     <div class="proj-img-pair-item">
-      <img src="assets/projetos/koss/Mockups/07.jpg" alt="KOSS — Aplicação" loading="lazy">
+      <img src="assets/projetos/Paula e Erick Casamento/Mockups/tag.jpg" alt="Paula &amp; Erick — Tag" loading="lazy">
     </div>
   </div>
 
   <!-- ─── FULL BLEED 3 ─────────────────────────────────────────────── -->
   <div class="proj-img-full" style="height:70vh">
     <img
-      src="assets/projetos/koss/Mockups/05.jpg"
-      alt="KOSS — Aplicação"
+      src="assets/projetos/Paula e Erick Casamento/Mockups/holder.jpg"
+      alt="Paula &amp; Erick — Aplicação"
       id="imgP3"
       loading="lazy"
     >
-  </div>
-
-  <!-- ─── MOSAIC — 3 IMAGES ─────────────────────────────────────────── -->
-  <div class="proj-mosaic-wrap">
-    <div class="proj-mosaic">
-      <div class="proj-mosaic-main">
-        <img src="assets/projetos/koss/Mockups/08.jpg" alt="KOSS — Aplicação" loading="lazy">
-      </div>
-      <div class="proj-mosaic-side">
-        <img src="assets/projetos/koss/Mockups/09.jpg" alt="KOSS — Aplicação" loading="lazy">
-      </div>
-      <div class="proj-mosaic-side">
-        <img src="assets/projetos/koss/Mockups/10.jpg" alt="KOSS — Aplicação" loading="lazy">
-      </div>
-    </div>
   </div>
 
   <!-- ─── APPLICATIONS STATEMENT ───────────────────────────────────── -->
@@ -862,7 +909,7 @@
     <div class="proj-statement-inner">
       <span class="sec-label reveal">Aplicações</span>
       <p class="proj-statement-body" id="applicationsText">
-        Do cartão ao outdoor. Da tag à tela do celular. A marca KOSS não diminui em nenhuma escala — porque uma grife premium precisa habitar cada superfície com a mesma elegância silenciosa.
+        Do lacre ao guardanapo. Da tag ao álbum. A identidade de Paula &amp; Erick não diminui em nenhuma escala — porque um casamento elegante precisa habitar cada detalhe com a mesma inteireza.
       </p>
     </div>
   </section>
@@ -961,8 +1008,16 @@
       if (!img) return;
       const rect   = img.parentElement.getBoundingClientRect();
       const offset = (rect.top + rect.height / 2 - vh / 2) * factor;
-      img.style.transform = `translateY(${offset}px)`;
+      img.style.transform = `translateY(calc(-50% + ${offset}px))`;
     });
+
+    /* Grid image parallax */
+    const gridImg = document.getElementById('imgGrid');
+    if (gridImg) {
+      const rect   = gridImg.parentElement.getBoundingClientRect();
+      const offset = (rect.top + rect.height / 2 - vh / 2) * 0.14;
+      gridImg.style.transform = `translateY(${offset}px)`;
+    }
   }
 
   /* ── INTERSECTION OBSERVERS ─────────────────────────────────────── */
@@ -976,6 +1031,9 @@
   }, { threshold: 0.10, rootMargin: '0px 0px -60px 0px' });
 
   document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+  /* Observe all logo/monogram images */
+  document.querySelectorAll('.proj-logo-reveal').forEach(el => revealObs.observe(el));
 
   /* Footer logo */
   const footerObs = new IntersectionObserver(entries => {
@@ -1016,7 +1074,7 @@
       requestAnimationFrame(animRing);
     })();
 
-    document.querySelectorAll('a, button, .proj-img-pair-item, .proj-mosaic-main, .proj-mosaic-side, .footer-coords, .palette-swatch')
+    document.querySelectorAll('a, button, .proj-img-pair-item, .footer-coords, .palette-swatch')
       .forEach(el => {
         el.addEventListener('mouseenter', () => {
           ring.style.width  = '60px';
